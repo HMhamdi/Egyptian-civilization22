@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الحضارة المصرية</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeSTesa24ReFH-TAzfWMKsphogPRzkHWrK1w&s');
+            background-size: cover
+            background-position: center;
+            background-attachment: fixed;
+            direction: rtl;
+            height: 100vh;
+        }
+
+        .content {
+            padding-bottom: 80px;
+            text-align: center;
+        }
+
+        .navbar {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #0a0a0a;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            font-size: 14px;
+            transition: color 0.3s;
+        }
+
+        .navbar a:hover {
+            color: #50d890;
+        }
+
+        .navbar i {
+            display: block;
+            font-size: 22px;
+            margin-bottom: 5px;
+        }
+
+        .navbar .active {
+            color: #50d890;
+        }
+
+        .section {
+            padding: 20px;
+            margin: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-button {
+            display: block;
+            width: 200px;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .contact-button:hover {
+            background-color: #0056b3;
+        }
+
+        .sidebar {
+            position: fixed;
+            top: 0;
+            right: -250px;
+            width: 250px;
+            height: 100%;
+            background-color: #0a0a0a;
+            box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+            transition: right 0.3s;
+            padding-top: 60px;
+            z-index: 1001;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .sidebar a {
+            color: white;
+            text-decoration: none;
+            margin: 15px 0;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .sidebar a:hover {
+            color: #50d890;
+        }
+
+        .sidebar .close-btn {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 24px;
+            color: white;
+        }
+
+        .sidebar a i {
+            display: block;
+            font-size: 28px;
+            margin-bottom: 5px;
+        }
+
+        .sidebar.show {
+            right: 0;
+        }
+
+        .menu-toggle {
+            font-size: 22px;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div id="home" class="section">
+            <h1>الحضارة المصرية القديمة</h1>
+            <p>كانت مصر القديمة واحدة من أقدم الحضارات وأكثرها تأثيرًا في التاريخ البشري. ازدهرت هذه الحضارة على ضفاف نهر النيل واستمرت لآلاف السنين.</p>
+        </div>
+
+        <div id="pyramids" class="section">
+            <h2>الأهرامات</h2>
+            <p>تعتبر الأهرامات المصرية من أهم الإنجازات المعمارية في تاريخ البشرية. بنيت هذه الهياكل الضخمة كمقابر للفراعنة وهي تعكس القدرة الهندسية للمصريين القدماء.</p>
+        </div>
+
+        <div id="pharaohs" class="section">
+            <h2>الفراعنة</h2>
+            <p>حكم الفراعنة مصر القديمة وتركوا إرثًا كبيرًا من الثقافة والفنون والعمارة. كانوا يعتبرون آلهة على الأرض وكان لهم تأثير كبير على الحياة اليومية للمصريين.</p>
+        </div>
+
+        <div id="temples" class="section">
+            <h2>المعابد</h2>
+            <p>شيد المصريون القدماء العديد من المعابد الرائعة التي كانت تستخدم للعبادة والتقرب من الآلهة. هذه المعابد تتميز بتصميماتها الفريدة وزخارفها المعقدة.</p>
+        </div>
+
+        <div id="contact" class="section">
+            <a class="contact-button" href="https://hmhamdi.github.io/hm8/?fbclid=IwZXh0bgNhZW0CMTAAAR1K13MxLB8qzE_U6Ug3wsW-u4w42kDwTECtiBNEJUKI4-2pAUtH9Uhh514_aem_ATYAW7-I-_pB--Cc5qJb7rQRgzKzaGRq9jMcsTF0Sge1ONkJeHDTLasEgnpNwgibN1IEWk6MjwRxHN9E8QoHH3PB">تواصل مع صانع الموقع</a>
+        </div>
+    </div>
+
+    <div class="navbar">
+        <a href="#home" class="active"><i class="fa fa-home"></i><span>الرئيسية</span></a>
+        <a href="#contact"><i class="fa fa-envelope"></i><span>تواصل معنا</span></a>
+        <a href="javascript:void(0)" class="menu-toggle" onclick="toggleSidebar()"><i class="fa fa-bars"></i><span>القائمة</span></a>
+    </div>
+
+    <div id="sidebar" class="sidebar">
+        <a href="javascript:void(0)" class="close-btn" onclick="toggleSidebar()">&times;</a>
+        <a href="#home"><i class="fa fa-home"></i>الرئيسية</a>
+        <a href="#pyramids"><i class="fa fa-mountain"></i>الأهرامات</a>
+        <a href="#pharaohs"><i class="fa fa-user-crown"></i>الفراعنة</a>
+        <a href="#temples"><i class="fa fa-landmark"></i>المعابد</a>
+        <a href="#contact"><i class="fa fa-envelope"></i>تواصل معنا</a>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script>
+        function toggleSidebar() {
+            document.getElementById('sidebar').classList.toggle('show');
+        }
+    </script>
+</body>
+</html>
